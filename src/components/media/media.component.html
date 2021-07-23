@@ -1,0 +1,75 @@
+<!--Tabs-->
+<ul class="nav nav-tabs" id="myTab" role="tablist" (click)="selectedNavItem($event)">
+    <li class="nav-item  active" role="presentation" tabindex="movie">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#movie" type="button" role="tab" aria-controls="movie" aria-selected="true" id="movie">Movies[{{movies.length}}]</button><!--id="movies" -->
+ 
+    </li>
+    <li class="nav-item" role="presentation" tabindex="game">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#game" type="button" role="tab" aria-controls="game" aria-selected="false" id="game">Games[{{games.length}}]</button><!--id="games"-->
+    </li>
+    <li class="nav-item" role="presentation" tabindex="series" >
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#series" type="button" role="tab" aria-controls="series" aria-selected="false" id="series">Series[{{series.length}}]</button><!--id="series" -->
+    </li>
+    
+    <li class="nav-item" role="presentation" tabindex="update">
+      <nav class="navbar navbar-light bg-light">
+        <div class="form-group w-150">
+          <input type="text" [value]="title" class="form-control" id="title" placeholder="Title Edit" (change)="titleUpdate($event)">
+        </div>
+       </nav>
+   </li>
+   <li>
+    <nav class="navbar navbar-light bg-light">
+      <input type="text" [value]="" class="form-control" id="searchText" #searchText placeholder="Type search data .." (blur)="getValue($event)"><!--class="form-control"-->
+      <button type="button" class="btn btn-secondary" (click)="onSubmit()">Search</button>
+      <button type="button" class="btn btn-secondary" (click)="searchText.value = ''">Clear</button>
+    </nav>
+   </li>
+   <li>
+    <nav class="navbar navbar-light bg-light">
+     <button type="button" class="btn btn-success" (click)="dataRefresh(activeNavId)">Refresh</button>
+    </nav>
+   </li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" role="tabpanel" aria-labelledby="contact-tab" id="movie">
+
+        <div class="form-check form-switch">
+        <input id="checkbox" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" (change)="toggelClick($event)" />
+        
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >{{objectTypeDisplay}}</label>
+
+        </div>
+
+      <app-list [tData]="mediaArray" *ngIf="listDisplay"></app-list>
+
+      <app-grid [tData]="mediaArray" *ngIf="listDisplay == false" ></app-grid>
+
+    </div>
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="contact-tab1" id="game">
+      <button type="button" class="btn btn-primary">
+            Games <span class="badge badge-light">{{games.length}}</span>
+        </button>
+        <span class="badge">{{games.length}}</span>
+
+        <app-list [tData]="mediaArray"></app-list>
+
+        <app-grid [tData]="mediaArray"></app-grid>
+
+    </div>
+    <div class="tab-pane fade" role="tabpanel" aria-labelledby="contact-tab2" id="series">
+        <button type="button" class="btn btn-primary">
+            Series <span class="badge badge-light">{{series.length}}</span>
+        </button>
+        <span class="badge">{{series.length}}</span>
+
+        <app-list [tData]="mediaArray"></app-list>
+
+        <app-grid [tData]="mediaArray"></app-grid>
+
+    </div>
+  </div>
+
+  {{data | json}}

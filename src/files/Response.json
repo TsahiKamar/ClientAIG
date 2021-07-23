@@ -1,0 +1,75 @@
+{
+    "results": [
+      {
+        "Title": "Back to the Future",
+        "Year": "19850205 ",
+        "imdbID": "tt0088763",
+        "Type": "movie",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future Part II",
+        "Year": "19890408 ",
+        "imdbID": "tt0096874",
+        "Type": "movie",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTMxMGM5MjItNDJhNy00MWI2LWJlZWMtOWFhMjI5ZTQwMWM3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future Part III",
+        "Year": "19901223",
+        "imdbID": "tt0099088",
+        "Type": "movie",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BYjhlMGYxNmMtOWFmMi00Y2M2LWE5NWYtZTdlMDRlMGEzMDA3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Ivan Vasilievich: Back to the Future",
+        "Year": "19730101",
+        "imdbID": "tt0070233",
+        "Type": "movie",
+        "Poster": "http://ia.media-imdb.com/images/M/MV5BNDQ3NDM2NjM5MF5BMl5BanBnXkFtZTYwNTg1OTc5._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future... The Ride",
+        "Year": "19910320",
+        "imdbID": "tt0101392",
+        "Type": "movie",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM2OTc3NWQtODc0Mi00NDQxLTkwZDItY2U4ZTJjMDFiMzlmXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future",
+        "Year": "19910408",
+        "imdbID": "tt0101042",
+        "Type": "series",
+        "Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTE5OTYzNjUzMV5BMl5BanBnXkFtZTcwNzczMzEzMQ@@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future: The Game - Episode 1, It's About Time",
+        "Year": "20100108",
+        "imdbID": "tt1688659",
+        "Type": "game",
+        "Poster": "http://ia.media-imdb.com/images/M/MV5BYmJkM2U1NTktZDQ4Ny00YzllLWE3YzMtMGIwMTlkZjI4YTE2XkEyXkFqcGdeQXVyNTI2NTY2MDI@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future: Making the Trilogy",
+        "Year": "20021108",
+        "imdbID": "tt0338228",
+        "Type": "movie",
+        "Poster": "N/A"
+      },
+      {
+        "Title": "The Secrets of the Back to the Future Trilogy",
+        "Year": "19900908",
+        "imdbID": "tt0162636",
+        "Type": "movie",
+        "Poster": "http://ia.media-imdb.com/images/M/MV5BMTc5MTE3NTE3N15BMl5BanBnXkFtZTcwMzM4NTIyMQ@@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Back to the Future: The Game - Episode 5, Outatime",
+        "Year": "20110608",
+        "imdbID": "tt1841512",
+        "Type": "game",
+        "Poster": "http://ia.media-imdb.com/images/M/MV5BZDIyOGQ4NGQtMzViNi00YWYyLTljY2EtYmNhMGI5Y2UzMjUyXkEyXkFqcGdeQXVyNTI2NTY2MDI@._V1_SX300.jpg"
+      }
+    ],
+    "totalResults": "10"
+  }

@@ -1,0 +1,15 @@
+<span>Sort</span>   
+<button type="button" class="btn btn-link" (click)="sort(0)">Desc</button>
+<button type="button" class="btn btn-link" (click)="sort(1)">Asc</button>
+
+<ul *ngFor="let item of tData;let i = index ;">
+    <li><button type="button" class="btn btn-link" (click)="linkClick(item.Title,i)">{{item.Title}}</button>
+        <app-card [tSelectedItem]="item" [tSelectedIndex]="selectedIndex" [tItemIndex]="i" (displayEvent)="hide($event)"></app-card>
+        <div *ngIf="item.imgNotFound !== true">
+          <button type="button" class="btn btn-link" (click)="showDetails(i)"><img class="card-img-top" src="{{item.Poster}}" alt="{{item.Poster}}"></button>
+        <!--<button type="button" class="btn btn-link" (click)="showDetails(i)"><img src="invalid_link" (error)="this.error=null;this.src='{{item.Poster}}';"></button>--><!--onerror= this.onerror-->
+        </div>
+    </li>
+</ul>
+
+

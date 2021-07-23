@@ -1,0 +1,28 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Year</th>
+        <th scope="col">ImdbID</th>
+        <th scope="col">Poster</th>
+        <th scope="col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of tData">
+        <td>{{item.Title}}</td>
+        <td>{{item.Year}}</td>
+        <td>{{item.imdbID}}</td>
+        <td>
+          <div *ngIf="item.imgNotFound !== true">
+            <img class="card-img-top" src="{{item.Poster}}" alt="{{item.Poster}}">
+          </div> 
+        </td>
+        <!--<td><object data="{{item.Poster}}" type="image/jpg">Not Found</object></td>-->
+        <td>{{item.Type}}</td>
+
+    </tr>
+ 
+    </tbody>
+  </table>
+

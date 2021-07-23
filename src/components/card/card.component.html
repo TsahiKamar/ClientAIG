@@ -1,0 +1,11 @@
+ 
+ <div class="card" style="width: 18rem;">
+    <div class="card-body" *ngIf="tSelectedIndex == tItemIndex">
+      <h5 class="card-title">Title {{tSelectedItem.Title}}</h5>
+      <h5 class="card-title">Year {{tSelectedItem.Year}}</h5>
+      <h5 class="card-title">Type {{tSelectedItem.Type}}</h5>
+      <p class="card-text">ImdbDB {{tSelectedItem.imdbID}}</p>
+      <button (click)="hide()">Back</button>
+    </div>
+  </div>
+  
