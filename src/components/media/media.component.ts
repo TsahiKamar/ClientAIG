@@ -33,15 +33,16 @@ export class MediaComponent implements OnInit {
   games:Media[]=[];
   series:Media[]=[];
   
-  //series
   checked: boolean;
 
   title:string = null;
   search:string = null;
-  searchText:string = null;//?
+  searchText:string = null;
   subscription :Subscription;
   listDisplay:Boolean = null;
   objectTypeDisplay:string = null;
+  imgNotFound:boolean = null;
+
 
   constructor(private shareService : ShareService,private mediaService: MediaService) { 
      this.data = this.mediaService.geAllData();  
@@ -64,8 +65,47 @@ export class MediaComponent implements OnInit {
    this.games = this.data.filter(x => x.Type == Games);
 
    this.series = this.data.filter(x => x.Type == Series);
-      
+
+ 
   }
+
+  // ngAfterContentChecked(){
+  //   this.mediaArray.forEach(item => {
+  //     item.imgNotFound = null;
+  //     console.log(' ctor item.imgNotFound ' + item.imgNotFound);
+  //     this.checkImage(item.Poster);
+  //     if (this.imgNotFound == true){
+  //       item.imgNotFound = Boolean(true);
+  //     }
+  //     else
+  //     {
+  //       item.imgNotFound = Boolean(false);
+  //     }     
+  //   }); 
+  //   console.log('mediacomponent this.mediaArray => ' + JSON.stringify(this.mediaArray));
+  
+  
+  // }
+
+  checkImage(URL) {
+    var tester=new Image();
+    tester.onload=this.imageFound;
+    tester.onerror=this.imageNotFound;
+    tester.src=URL;
+    console.log('Image :' + URL);
+  }
+
+imageFound() {
+    //console.log('Image found and loaded !' + URL);
+    this.imgNotFound = false;
+
+  }
+
+imageNotFound() {
+    //console.log('Image not found !' + URL);
+    this.imgNotFound = true;
+}
+
 
   
   toggelClick(event){
